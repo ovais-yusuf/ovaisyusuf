@@ -379,7 +379,7 @@
 .portfolio .timeline:before {
   content: "";
   position: absolute;
-  left: 24px;
+  left: 35px;
   width: 2px;
   top: 20px;
   bottom: 0;
@@ -390,7 +390,7 @@
 }
 .portfolio .timeline-item {
   position: relative;
-  padding-left: 64px;
+  padding-left: 96px;
   margin-bottom: 48px;
 }
 .portfolio .timeline-item:last-child {
@@ -398,19 +398,24 @@
 }
 .portfolio .timeline-marker {
   position: absolute;
-  top: 28px;
+  top: 20px;
   left: 0;
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
-  background: var(--surface);
+  width: 72px;
+  height: 72px;
+  padding: 6px;
+  background: #fff;
   border: 1px solid var(--border);
-  border-radius: 14px;
-  color: var(--blue);
-  font-size: 10px;
-  font-weight: 800;
+  border-radius: 16px;
+  overflow: hidden;
   box-shadow: 0 3px 8px #00000008;
+}
+.portfolio .timeline-marker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .portfolio .experience-card {
   padding: 32px;
@@ -509,6 +514,21 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 20px;
+}
+.portfolio .education-org {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.portfolio .education-org img {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  object-fit: contain;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
 .portfolio .education-card h4 {
   font-size: 20px;
@@ -1148,7 +1168,7 @@
   }
   .portfolio .education {
     position: static;
-    margin-left: 64px;
+    margin-left: 96px;
   }
   .portfolio .skill-card {
     padding: 28px;
@@ -1273,18 +1293,18 @@
     line-height: 25px;
   }
   .portfolio .timeline:before {
-    left: 15px;
+    left: 23px;
   }
   .portfolio .timeline-item {
-    padding-left: 40px;
+    padding-left: 64px;
     margin-bottom: 28px;
   }
   .portfolio .timeline-marker {
-    width: 32px;
-    height: 36px;
-    font-size: 8px;
-    top: 24px;
-    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    top: 18px;
+    border-radius: 12px;
   }
   .portfolio .experience-card {
     padding: 24px 20px;
@@ -1313,7 +1333,7 @@
     padding: 5px 8px;
   }
   .portfolio .education {
-    margin-left: 40px;
+    margin-left: 64px;
   }
   .portfolio .education-card {
     padding: 20px;

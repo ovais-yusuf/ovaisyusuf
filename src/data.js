@@ -1,3 +1,7 @@
+import bsuLogo from "./assets/bsu.jpeg";
+import msccLogo from "./assets/mscc.png";
+import auLogo from "./assets/au.webp";
+
 const MSCC_CASE_STUDY_PATH = "/projects/mscc-chatbot";
 const CAPSTONE_URL =
   "https://aerial-scene-query-git-main-muhammads-projects-7dea6a81.vercel.app/";
@@ -13,6 +17,7 @@ const timeline = [
   {
     role: "AI/ML Engineer - Aerial Scene Understanding (Graduate Research Assistant)",
     marker: "BSU",
+    logo: bsuLogo,
     org: "Bridgewater State University",
     location: "Bridgewater, MA",
     period: "Sept 2026 – Current",
@@ -25,6 +30,7 @@ const timeline = [
   {
     role: "AI Engineer - Automated Theorem Proving (Lean 4)",
     marker: "BSU",
+    logo: bsuLogo,
     org: "Bridgewater State University",
     location: "Bridgewater, MA",
     period: "May 2026 – Sept 2026",
@@ -37,6 +43,7 @@ const timeline = [
   {
     role: "AI Developer",
     marker: "MSCC",
+    logo: msccLogo,
     org: "Metro South Chamber of Commerce",
     location: "Brockton, MA",
     period: "Jan 2026 – May 2026",
@@ -50,6 +57,7 @@ const timeline = [
   {
     role: "Machine Learning Researcher",
     marker: "IMC",
+    logo: auLogo,
     org: "IMC, Air University, Pakistan",
     location: "Islamabad",
     period: "Aug 2022 – Aug 2024",

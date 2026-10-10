@@ -275,8 +275,8 @@ function Experience() {
         <div className="timeline">
           {timeline.map((item) => (
             <article key={item.role} className="timeline-item">
-              <span className="timeline-marker" aria-hidden="true">
-                {item.marker}
+              <span className="timeline-marker">
+                <img src={item.logo} alt="" />
               </span>
               <div className="experience-card">
                 <div className="role-heading">
@@ -309,7 +309,10 @@ function Experience() {
           <article className="education-card">
             <p className="date-label">Graduate studies</p>
             <h4>M.S. Computer Science</h4>
-            <p className="organization">Bridgewater State University</p>
+            <p className="organization education-org">
+              <img src={timeline[0].logo} alt="" />
+              Bridgewater State University
+            </p>
             <p>
               4.0 GPA. Graduate work in applied AI, computer vision, and systems
               that have to run outside a notebook.
