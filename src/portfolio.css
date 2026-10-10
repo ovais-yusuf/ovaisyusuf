@@ -203,7 +203,7 @@
 }
 .portfolio h1.hero-name {
   white-space: nowrap;
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: clamp(32px, 4vw, 52px);
   letter-spacing: -0.05em;
 }
 .portfolio .hero-role {
