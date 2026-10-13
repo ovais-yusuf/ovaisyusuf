@@ -1,21 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ThemeCtx, useTheme } from "./theme.js";
 
 export function ThemeProvider({ children }) {
-  const [dark, setDark] = useState(() => {
-    try {
-      return localStorage.getItem("portfolio-theme") === "dark";
-    } catch {
-      return false;
-    }
-  });
+  const [dark, setDark] = useState(false);
+  const themeReady = useRef(false);
 
   useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
+    if (!themeReady.current) {
+      themeReady.current = true;
+      try {
+        const stored = localStorage.getItem("portfolio-theme") === "dark";
+        if (stored !== dark) {
+          setDark(stored);
+          return;
+        }
+      } catch {
+        /* Storage can be unavailable; the inline script already set the class. */
+      }
     }
+
+    document.documentElement.classList.toggle("dark", dark);
     try {
       localStorage.setItem("portfolio-theme", dark ? "dark" : "light");
     } catch {
