@@ -4,7 +4,7 @@ import auLogo from "./assets/au.webp";
 
 const MSCC_CASE_STUDY_PATH = "/projects/mscc-chatbot";
 const CAPSTONE_URL =
-  "https://aerial-scene-query-git-main-muhammads-projects-7dea6a81.vercel.app/";
+  "https://aerial-scene-query.vercel.app/";
 const FIFA_URL = "https://wc26-matchday.vercel.app/";
 const EMAIL = "muhammadovaisyusuf@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/muhammadovaisyusuf/";
