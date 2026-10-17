@@ -108,8 +108,8 @@ const projects = [
     outcome: "Answers grounded in match and standings data.",
     tags: ["FastAPI", "PostgreSQL", "LLM tool calling", "Railway"],
     year: "2026",
-    href: "https://echo-madrid-production.up.railway.app/",
-    source: "https://github.com/ovais-yusuf/echo-madrid",
+    href: "https://echo-madrid-app.vercel.app/",
+    source: "https://github.com/ovais-yusuf/echo-madrid-app",
     media: "echo",
   },
   {
